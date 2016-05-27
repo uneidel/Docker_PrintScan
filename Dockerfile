@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM ubuntu:16.04
 MAINTAINER uneidel@octonion.de
 
 # in order to make cups work
@@ -7,8 +7,8 @@ MAINTAINER uneidel@octonion.de
 
 RUN apt-get update && apt-get -y dist-upgrade 
 RUN apt-get install -y whois  sane tesseract-ocr tesseract-ocr-deu unpaper imagemagick gpm libxml2 cups
-#ADD http://downloadcenter.samsung.com/content/DR/201512/20151210091120064/uld_v1.00.37_00.99.tar.gz /install/uld.tar.gz
-ADD http://www.bchemnet.com/suldr/driver/UnifiedLinuxDriver-1.00.35.tar.gz /install/uld.tar.gz
+ADD http://downloadcenter.samsung.com/content/DR/201512/20151210091120064/uld_v1.00.37_00.99.tar.gz /install/uld.tar.gz
+#ADD http://www.bchemnet.com/suldr/driver/UnifiedLinuxDriver-1.00.35.tar.gz /install/uld.tar.gz
 RUN tar zxvf /install/uld.tar.gz
 RUN /uld/noarch/package_install.sh printer-meta
 RUN /uld/noarch/package_install.sh scanner-meta
