@@ -2,13 +2,13 @@
 
 ## Components
 based on ubuntu:16.04
-S6-init 
-cups 
-Samsung Unified Driver
-scanimage
-tesseract
-imagemagick
-unpaper
+S6-init <br />
+cups      
+Samsung Unified Driver       
+scanimage      
+tesseract       
+imagemagick     
+unpaper       
 boxhandler (this little sh script uses a usb mouse to start scanning of a document)
 (left button each Document -> PDF) 
 (right button all Documents -> one PDF- merge)
