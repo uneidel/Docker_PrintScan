@@ -1,2 +1,2 @@
 #!/bin/bash
-avahi-daemon --no-drop-root
+#avahi-daemon --no-drop-root
